@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-area">
+        <h1>
+          Learn to code by <br />
+          watching others
+        </h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="form-area">
+        <div class="trial">
+          <span> Try it free 7 days &nbsp; </span>then $20/mo. thereafter
+        </div>
+        <div class="form">
+          <form class="form2" >
+            <div class="form-control">
+              <div class="form-control2">
+                <input   placeholder="First Name" id="fname"  />
+                <i class="fas fa-exclamation-circle"></i>
+                <div class="message fname">First Name cannot be empty</div>
+              </div>
+              <div class="form-control2">
+                <input type="text" placeholder="Last Name"  id="lname"/>
+                <i class="fas fa-exclamation-circle"></i>
+                <div class="message">Lirst Name cannot be empty</div>
+              </div>
+              <div class="form-control2">
+                <input type="text" placeholder="Email Address" id="email"/>
+                <i class="fas fa-exclamation-circle"></i>
+                <div class="message">Looks like this is not an email</div>
+                <div class="message2">email@example/com</div>
+              </div>
+              <div class="form-control2">
+                <input type="text" placeholder="Password" id="password"/>
+                <i class="fas fa-exclamation-circle"></i>
+                <div class="message">Password cannot be empty</div>
+              </div>
+              <button class="sub-btn" type="button">Claim your free trial</button>
+            </div>
+          </form>
+
+          <small
+            >By clicking the button, you are agreeing to our &nbsp;
+            <span>Terms and Services</span></small
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
