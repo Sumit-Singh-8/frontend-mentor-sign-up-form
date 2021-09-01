@@ -62,7 +62,7 @@ function validation(){
   let text = email.value;
   console.log(text);
 
-  let regx = /^([a-zA-Z0-9\.-])+@([a-z 0-9]).([a-z]{2,10}).([a-z]{2,10})?$/
+  let regx = /[a-z0-9]+[_a-z0-9\.-]*[a-z0-9]+@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})/ig
 
   if(regx.test(text)){
     console.log("Valid")
